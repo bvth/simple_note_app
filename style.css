@@ -1,0 +1,16 @@
+/* Card style */
+.card, .card-input {
+	border-radius: 5px;
+}
+
+.card {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	background: #abd;
+}
+
+.card .card-input{
+	background: #fff0;
+}
+/* === Card style === */
