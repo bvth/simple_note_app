@@ -10,10 +10,15 @@
         <title>SNAPP - Simple note app</title>
         <link rel="icon" href="addon/favicon.png">
     </head>
-    <body onClick="disableInputs(event)">
-		<div class="card" onClick="enableInput(event)">
-			<textarea id="card1" class="card-input" rows="5" cols="20" disabled="true" style="resize: both;"></textarea>
-		</div>
+    <body>
+        <div class="board">
+            <div class="card">
+                <textarea class="card-input" rows="5" cols="20"></textarea>
+            </div>
+        </div>
+        <button class="add-button btn btn-success" onClick="addCard(event)">
+            <i class="fas fa-plus"></i>
+        </button>
         <script src="index.js"></script>
     </body>
 </html>

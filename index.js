@@ -1,11 +1,10 @@
-function enableInput(event){
-	event.preventDefault();
-	event.stopPropagation();
-	event.target.disabled = false;
-}
-
-function disableInputs(event){
-	document.querySelectorAll(".card-input").forEach(element => {
-		element.disabled = true;
-	})
+function addCard(event){
+	let div = document.createElement("div");
+	div.className = "card";
+	let textarea = document.createElement("textarea");
+	textarea.className = "card-input";
+	textarea.rows = "5";
+	textarea.cols = "20";
+	div.appendChild(textarea);
+	document.querySelector(".board").appendChild(div);
 }
